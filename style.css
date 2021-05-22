@@ -1,0 +1,98 @@
+.landingPage_container {
+    background-color: #ddd;
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+header {
+    align-items: center; /*y axis when flex-direction is row*/
+    background-color: #bbb;
+    display: flex;
+    justify-content:center; /*x  when flex-direction is row*/
+    padding: 20px;
+}
+
+
+
+.portfolioPicture {
+    border-radius: 8px;
+    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+    height: auto;
+    margin-top: 10px;
+    width: 75%;
+    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+}
+
+.virtualPetsAmok {
+    border-radius: 8px;
+    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+    height: auto;
+    margin-top: 10px;
+    width: 75%;
+    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+}
+
+.bankTeller {
+    border-radius: 8px;
+    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+    height: auto;
+    margin-top: 10px;
+    width: 75%;
+    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+}
+
+.guessingGame {
+    border-radius: 8px;
+    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+    height: auto;
+    margin-top: 10px;
+    width: 75%;
+    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+}
+
+
+
+main {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-column: repeat(3, 1fr); /* same as 1fr 1fr 1fr */
+    padding: 25px;
+    text-align: center;
+}
+
+section {
+    background-color: #777;
+}
+
+.About_Me {
+    grid-row: 1/4;
+}
+
+.Skills {
+    grid-row: 1/2;
+}
+
+.Projects {
+    grid-row: 1/2;
+}
+
+
+
+@media only screen and (max-width: 767px){
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
