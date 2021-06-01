@@ -15,12 +15,13 @@
   <body>
     <header class="header">
       <h1 id="header__name">Lee Powell, SDE</h1>
+
+      <nav class="header__nav">
+        <a href="#aboutMeTitle">About Me</a>
+        <a href="#contactIformation">Contact Information</a>
+        <a href="#myProjects">Projects</a>
+      </nav>
     </header>
-    <nav class="header__nav">
-      <a href="#aboutMeTitle">About Me</a>
-      <a href="#contactIformation">Contact Information</a>
-      <a href="#myProjects">Projects</a>
-    </nav>
     <main>
       <h2 id="aboutMeTitle">About Me</h2>
       <section class="aboutMe">
@@ -32,11 +33,11 @@
           />
         </figure>
         <article class="article__profile">
-          <p>
+          <div class="article__profile_description">
             I'm alway looking to improve in everything that I do. Knowing that I
             have areas that can always be better helps me to improve to be the
             best I possibly can be.
-          </p>
+          </div>
           <h2 class="skills__list">Skills</h2>
           <ol>
             <li class="skills__list_coding">Coding</li>
@@ -180,7 +181,7 @@
               />
               <input
                 type="button"
-                class="prjects__column_button"
+                class="projects__column_button"
                 value="Guessing Game Project"
               />
             </figure>

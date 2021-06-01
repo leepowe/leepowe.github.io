@@ -96,11 +96,6 @@ section ol {
   padding-left: 1.5em;
 }
 
-.contact__information_list {
-  color: #000;
-  padding-bottom: 1.618em;
-}
-
 .portfolioPicture {
   border-radius: 8px;
   box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
@@ -120,11 +115,62 @@ section ol {
   justify-content: space-between;
 }
 
+#contactInformation {
+  text-align: center;
+}
+
+.contact__information_list {
+  color: #000;
+  padding-bottom: 1.618em;
+}
+
+.fa {
+  background: grey;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 2rem;
+}
+
+.fa-linkedin {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.fa-github {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.projects__title {
+  text-align: center;
+}
+
 #projects {
   display: grid;
   grid-column-gap: 2em;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
+}
+
+.projects__column_figure {
+  text-align: center;
 }
 
 #projects article {
@@ -143,6 +189,37 @@ section ol {
   -moz-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
 }
 
+.projects__column_button {
+  background: #222;
+  border-radius: 5px;
+  bottom: 0.5rem;
+  color: rgb(1, 253, 253);
+  margin: 0px;
+  opacity: 0;
+  position: relative;
+  transition: opacity 0.5s ease-out;
+  transition: 1s;
+}
+
+.projects__column_figure:hover .projects__column_button {
+  bottom: 2.5rem;
+  opacity: 0.8;
+}
+
+.projects__column {
+  padding-left: 0.5rem;
+}
+
+.projects__column_title {
+  text-align: center;
+}
+
+.projects__column_image {
+  text-align: center;
+  height: auto;
+  max-width: 100%;
+}
+
 footer {
   background: #555;
   color: #fff;
@@ -154,11 +231,30 @@ footer {
 
 @media only screen and (max-width: 767px) {
   header {
+    align-items: center;
     display: flex;
     flex-direction: column;
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #myProjects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer {
+    align-items: center;
     display: flex;
     flex-direction: column;
   }
