@@ -13,97 +13,116 @@
     <title>Lee Powell Portfolio</title>
   </head>
   <body>
-    <header>
-      <h1>Lee Powell, SDE</h1>
+    <header class="header">
+      <h1 id="header__name">Lee Powell, SDE</h1>
     </header>
-    <nav>
-      <a href="#aboutMe">About Me</a>
+    <nav class="header__nav">
+      <a href="#aboutMeTitle">About Me</a>
       <a href="#contactIformation">Contact Information</a>
       <a href="#myProjects">Projects</a>
     </nav>
     <main>
-      <section id="aboutMe">
-        <h2>About Me</h2>
-        <img
-          class="portfolioPicture"
-          src="Lee Powell's Portfolio_files\Monicle.jpg"
-          alt="picture of Lee"
-        />
-        <p>
-          I'm always interested in new things to learn that will help me to
-          better myself and be a better role modle for my kids.
-        </p>
-        <h2>Skills</h2>
-        <ol>
-          <li>Coding</li>
-          <ul>
-            <li>Java</li>
-            <li>JavaScipt</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Batch Script</li>
-          </ul>
-          <li>Professional Skills</li>
-          <ul>
-            <li>Communication Skills</li>
-            <li>Collaboration Skills</li>
-            <li>Problem Sovling Skills</li>
-            <li>Analytical Skills</li>
-          </ul>
-          <li>Personal Skills</li>
-          <ul>
-            <li>Creativity</li>
-            <li>Attention to Detail</li>
-            <li>Negotiation</li>
-            <li>Possitive Attitude</li>
-          </ul>
-        </ol>
+      <h2 id="aboutMeTitle">About Me</h2>
+      <section class="aboutMe">
+        <figure>
+          <img
+            class="portfolioPicture"
+            src="Lee Powell's Portfolio_files\Monicle.jpg"
+            alt="picture of Lee"
+          />
+        </figure>
+        <article class="article__profile">
+          <p>
+            I'm alway looking to improve in everything that I do. Knowing that I
+            have areas that can always be better helps me to improve to be the
+            best I possibly can be.
+          </p>
+          <h2 class="skills__list">Skills</h2>
+          <ol>
+            <li class="skills__list_coding">Coding</li>
+            <ul>
+              <li>Java</li>
+              <li>JavaScipt</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>Batch Script</li>
+            </ul>
+            <li class="skills__list_professional">Professional Skills</li>
+            <ul>
+              <li>Communication Skills</li>
+              <li>Collaboration Skills</li>
+              <li>Problem Sovling Skills</li>
+              <li>Analytical Skills</li>
+            </ul>
+            <li class="skills__list_personal">Personal Skills</li>
+            <ul>
+              <li>Creativity</li>
+              <li>Attention to Detail</li>
+              <li>Negotiation</li>
+              <li>Possitive Attitude</li>
+            </ul>
+          </ol>
+        </article>
       </section>
       <section id="contactIformation">
         <h2>Contact Information</h2>
         <p>Ways that you can contact me:</p>
-        <ul>
-          <li>Phone: (740) 258-8590</li>
-          <li>Email: leepowell2@yahoo.com</li>
-        </ul>
-        <h4>Links</h4>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <a
-          href="www.linkedin.com/in/lee-powell-5b580967"
-          class="fa fa-linkedin"
-        ></a>
-
-        <a href="https://github.com/leepowe" class="fa fa-github"></a>
+        <article class="contact__information">
+          <ul class="contact__information_list">
+            <li>Phone: (740) 258-8590</li>
+            <li>Email: leepowell2@yahoo.com</li>
+          </ul>
+          <ul class="contact__information_links">
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+            <li>
+              <a
+                href="www.linkedin.com/in/lee-powell-5b580967"
+                class="fa fa-linkedin"
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/leepowe" class="fa fa-github"></a>
+            </li>
+          </ul>
+        </article>
       </section>
       <section id="myProjects">
-        <h2>Projects</h2>
+        <h2 class="projects__title">Projects</h2>
         <p>
           Over my time in coding I have learned various coding languages and
           programs. Here are some examples to show what I have learned over my
           time as a full stack software developer.
         </p>
         <div id="projects">
-          <article>
-            <h3>Virtual Pets Amok</h3>
-            <img
-              class="virtualPetsAmok"
-              src="Lee Powell's Portfolio_files\PetsAmok.JPG"
-              alt="image of virtual pets amok project"
-            />
-            <br /><a
+          <article class="projects__column">
+            <h3 class="projects__column_title">Virtual Pets Amok</h3>
+            <figure class="projects__column_figure">
+              <img
+                class="virtualPetsAmok"
+                src="Lee Powell's Portfolio_files\PetsAmok.JPG"
+                alt="image of virtual pets amok project"
+              />
+              <input
+                type="button"
+                class="projects__column_button"
+                value="Virtual Pets Amok Project"
+              />
+            </figure>
+            <br />
+            <a
               href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java"
-              >Virtual Pets Amok</a
+              >Virtual Pets Amok project file</a
             >
-            <ol>
-              <li>Technology Used</li>
+            <ol class="project__proficiency_list">
+              <li class="poject__technology_list">Technology Used</li>
               <ul>
                 <li>IntelliJ</li>
                 <li>Eclipse</li>
               </ul>
-              <li>Skills Used</li>
+              <li class="project__skills_list">Skills Used</li>
               <ul>
                 <li>Conditionals</li>
                 <li>Tick Counter</li>
@@ -119,23 +138,30 @@
               </ul>
             </ol>
           </article>
-          <article>
-            <h3>Bank Teller</h3>
-            <img
-              class="bankTeller"
-              src="Lee Powell's Portfolio_files\Bank Teller.JPG"
-              alt="Image of Bank Teller project"
-            />
+          <article class="projects__column">
+            <h3 class="projects__column_title">Bank Teller</h3>
+            <figure class="projects__column_figure">
+              <img
+                class="bankTeller"
+                src="Lee Powell's Portfolio_files\Bank Teller.JPG"
+                alt="Image of Bank Teller project"
+              />
+              <input
+                type="button"
+                class="projects__column_button"
+                value="Bank Teller Project"
+              />
+            </figure>
             <br /><a
               href="https://github.com/2021-Spring-Part-Time/bank-teller-leepowe"
-              >Bank Teller</a
+              >Bank Teller project file</a
             >
-            <ol>
-              <li>Technology Used</li>
+            <ol class="project__proficiency_list">
+              <li class="project__technology_list">Technology Used</li>
               <ul>
                 <li>IntelliJ</li>
               </ul>
-              <li>Skills Used</li>
+              <li class="project__skills_list">Skills Used</li>
               <ul>
                 <li>Map</li>
                 <li>Collections</li>
@@ -144,22 +170,29 @@
               </ul>
             </ol>
           </article>
-          <article>
-            <h3>Guessing Game</h3>
-            <img
-              class="guessingGame"
-              src="Lee Powell's Portfolio_files\Guessing Game.JPG"
-              alt="Image of Guessing Game project"
-            />
+          <article class="projects__column">
+            <h3 class="projects__column_title">Guessing Game</h3>
+            <figure class="projects__column_figure">
+              <img
+                class="guessingGame"
+                src="Lee Powell's Portfolio_files\Guessing Game.JPG"
+                alt="Image of Guessing Game project"
+              />
+              <input
+                type="button"
+                class="prjects__column_button"
+                value="Guessing Game Project"
+              />
+            </figure>
             <br /><a href="https://github.com/leepowe/guessingGame"
-              >Guessing Game</a
+              >Guessing Game project file</a
             >
-            <ol>
-              <li>Technology Used</li>
+            <ol class="project__proficiency_list">
+              <li class="project__technology_list">Technology Used</li>
               <ul>
                 <li>IntelliJ</li>
               </ul>
-              <li>Skills Used</li>
+              <li class="project_skills_list">Skills Used</li>
               <ul>
                 <li>Teamwork</li>
                 <li>Communication</li>
@@ -171,6 +204,8 @@
         </div>
       </section>
     </main>
-    <footer>&copy; 2021</footer>
+    <footer class="footer">
+      <small class="footer__copyright"> &copy; 2021 </small>
+    </footer>
   </body>
 </html>
