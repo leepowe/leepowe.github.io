@@ -1,98 +1,138 @@
-.landingPage_container {
-    background-color: #ddd;
-    border-radius: 8px;
-    margin: auto;
-    padding: 20px;
-    width: 80%;
+* {
+  font-family: monospace;
+  line-height: 1.618em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  margin-top: 3em;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(75, 1, 65);
+}
+
+header,
+main,
+footer {
+  background: #eee;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 header {
-    align-items: center; /*y axis when flex-direction is row*/
-    background-color: #bbb;
-    display: flex;
-    justify-content:center; /*x  when flex-direction is row*/
-    padding: 20px;
+  padding: 1.618em 0;
 }
 
-
-
-.portfolioPicture {
-    border-radius: 8px;
-    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
-    height: auto;
-    margin-top: 10px;
-    width: 75%;
-    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
-    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+header h1 {
+  font-size: 3em;
 }
 
-.virtualPetsAmok {
-    border-radius: 8px;
-    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
-    height: auto;
-    margin-top: 10px;
-    width: 75%;
-    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
-    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+  background: #333;
 }
 
-.bankTeller {
-    border-radius: 8px;
-    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
-    height: auto;
-    margin-top: 10px;
-    width: 75%;
-    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
-    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
+nav a {
+  padding: 0.309em 2em;
+  color: #fff;
+  text-decoration: none;
 }
 
-.guessingGame {
-    border-radius: 8px;
-    box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
-    height: auto;
-    margin-top: 10px;
-    width: 75%;
-    -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
-    -moz-box-shadow: -4px 6px 5px 0px rgba(75,1,65,0.75);
-}
-
-
-
-main {
-    background-color: #eee;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    grid-column: repeat(3, 1fr); /* same as 1fr 1fr 1fr */
-    padding: 25px;
-    text-align: center;
+nav a:hover {
+  background: rgba(180, 254, 190);
+  box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+  color: #000;
 }
 
 section {
-    background-color: #777;
+  margin: 1em 0;
+
+  padding-top: 3em;
+  min-height: 20em;
 }
 
-.About_Me {
-    grid-row: 1/4;
+section > p {
+  margin: 1em 0;
 }
 
-.Skills {
-    grid-row: 1/2;
+section ul {
+  padding-left: 1.5em;
 }
 
-.Projects {
-    grid-row: 1/2;
+section ol {
+  padding-left: 1.5em;
 }
 
+.portfolioPicture {
+  border-radius: 8px;
+  box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+  display: grid;
+  grid-column-gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  height: 25%;
+  margin-top: 10px;
+  width: 25%;
+  -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+  -moz-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+}
 
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 2em;
+}
 
-@media only screen and (max-width: 767px){
-header {
+#projects article {
+  background: #ccc;
+  padding: 1em;
+}
+
+#projects article img {
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+  height: auto;
+  margin-top: 10px;
+  -webkit-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+  -moz-box-shadow: -4px 6px 5px 0px rgba(75, 1, 65, 0.75);
+}
+
+footer {
+  background: #555;
+  color: #fff;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
     display: flex;
     flex-direction: column;
-}
+  }
 
-main {
+  main {
     display: flex;
     flex-direction: column;
+  }
 }

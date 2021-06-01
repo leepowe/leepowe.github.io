@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./style.css"
+      <meta
+      charset="UTF-8"
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Lee Powell's Portfolio</title>
+    <title>Lee Powell Portfolio</title>
   </head>
   <body>
-    <div class="landingPage_container">
-      <header>
-        <h1>Professional Portfolio</h1>
-      </header>
-      <main>
-        <section class="About_Me">
-          <img
-            class="portfolioPicture"
-            src="Lee Powell's Portfolio_files\Monicle.jpg"
-            alt="picture of Lee"
-          />
-          <h2>About Me</h2>
-          <p>
-            I'm always interested in new things to learn that will help me to
-            better myself and be a better role modle for my kids.
-          </p>
-          <h3>Contact Information</h3>
-          <p>
-            Phone: (740) 258-8590
-            <br />
-            Email: leepowell2@yahoo.com
-          </p>
-          <h4>Links</h4>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          />
-          <a
-            href="www.linkedin.com/in/lee-powell-5b580967"
-            class="fa fa-linkedin"
-          ></a>
-
-          <a href="https://github.com/leepowe" class="fa fa-github"></a>
-        </section>
-        <section class="Skills">
-          <h2>Skills</h2>
+    <header>
+      <h1>Lee Powell, SDE</h1>
+    </header>
+    <nav>
+      <a href="#aboutMe">About Me</a>
+      <a href="#contactIformation">Contact Information</a>
+      <a href="#myProjects">Projects</a>
+    </nav>
+    <main>
+      <section id="aboutMe">
+        <h2>About Me</h2>
+        <img
+          class="portfolioPicture"
+          src="Lee Powell's Portfolio_files\Monicle.jpg"
+          alt="picture of Lee"
+        />
+        <p>
+          I'm always interested in new things to learn that will help me to
+          better myself and be a better role modle for my kids.
+        </p>
+        <h2>Skills</h2>
+        <ol>
+          <li>Coding</li>
           <ul>
-            <li>Coding</li>
-            <ol>
-              <li>Java</li>
-              <li>JavaScipt</li>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Batch Script</li>
-            </ol>
-            <li>Professional Skills</li>
-            <ol>
-              <li>Communication Skills</li>
-              <li>Collaboration Skills</li>
-              <li>Problem Sovling Skills</li>
-              <li>Analytical Skills</li>
-            </ol>
-            <li>Personal Skills</li>
-            <ol>
-              <li>Creativity</li>
-              <li>Attention to Detail</li>
-              <li>Negotiation</li>
-              <li>Possitive Attitude</li>
-            </ol>
+            <li>Java</li>
+            <li>JavaScipt</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Batch Script</li>
           </ul>
-        </section>
-        <section class="Projects">
-          <h2>Projects</h2>
+          <li>Professional Skills</li>
+          <ul>
+            <li>Communication Skills</li>
+            <li>Collaboration Skills</li>
+            <li>Problem Sovling Skills</li>
+            <li>Analytical Skills</li>
+          </ul>
+          <li>Personal Skills</li>
+          <ul>
+            <li>Creativity</li>
+            <li>Attention to Detail</li>
+            <li>Negotiation</li>
+            <li>Possitive Attitude</li>
+          </ul>
+        </ol>
+      </section>
+      <section id="contactIformation">
+        <h2>Contact Information</h2>
+        <p>Ways that you can contact me:</p>
+        <ul>
+          <li>Phone: (740) 258-8590</li>
+          <li>Email: leepowell2@yahoo.com</li>
+        </ul>
+        <h4>Links</h4>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <a
+          href="www.linkedin.com/in/lee-powell-5b580967"
+          class="fa fa-linkedin"
+        ></a>
+
+        <a href="https://github.com/leepowe" class="fa fa-github"></a>
+      </section>
+      <section id="myProjects">
+        <h2>Projects</h2>
+        <p>
+          Over my time in coding I have learned various coding languages and
+          programs. Here are some examples to show what I have learned over my
+          time as a full stack software developer.
+        </p>
+        <div id="projects">
           <article>
             <h3>Virtual Pets Amok</h3>
             <img
@@ -82,14 +97,14 @@
               href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java"
               >Virtual Pets Amok</a
             >
-            <ul>
+            <ol>
               <li>Technology Used</li>
-              <ol>
+              <ul>
                 <li>IntelliJ</li>
                 <li>Eclipse</li>
-              </ol>
+              </ul>
               <li>Skills Used</li>
-              <ol>
+              <ul>
                 <li>Conditionals</li>
                 <li>Tick Counter</li>
                 <li>If/Else Statements</li>
@@ -101,8 +116,8 @@
                 <li>Inheritance</li>
                 <li>Encapsolation</li>
                 <li>TDD</li>
-              </ol>
-            </ul>
+              </ul>
+            </ol>
           </article>
           <article>
             <h3>Bank Teller</h3>
@@ -115,19 +130,19 @@
               href="https://github.com/2021-Spring-Part-Time/bank-teller-leepowe"
               >Bank Teller</a
             >
-            <ul>
+            <ol>
               <li>Technology Used</li>
-              <ol>
+              <ul>
                 <li>IntelliJ</li>
-              </ol>
+              </ul>
               <li>Skills Used</li>
-              <ol>
+              <ul>
                 <li>Map</li>
                 <li>Collections</li>
                 <li>Remove Objects From Map</li>
                 <li>Add Objects To Map</li>
-              </ol>
-            </ul>
+              </ul>
+            </ol>
           </article>
           <article>
             <h3>Guessing Game</h3>
@@ -139,25 +154,23 @@
             <br /><a href="https://github.com/leepowe/guessingGame"
               >Guessing Game</a
             >
-            <ul>
+            <ol>
               <li>Technology Used</li>
-              <ol>
+              <ul>
                 <li>IntelliJ</li>
-              </ol>
+              </ul>
               <li>Skills Used</li>
-              <ol>
+              <ul>
                 <li>Teamwork</li>
                 <li>Communication</li>
                 <li>Researching</li>
                 <li>Problem Solving</li>
-              </ol>
-            </ul>
+              </ul>
+            </ol>
           </article>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; 2021</p>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </main>
+    <footer>&copy; 2021</footer>
   </body>
 </html>
