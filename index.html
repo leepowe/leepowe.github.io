@@ -1,214 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="./style.css"
-      meta
-      charset="UTF-8"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Powell Portfolio</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>Lee Powell</title>
+</head>
+
+<body>
+
+  <div class="container">
+
     <header class="header">
-      <h1 id="header__name">Lee Powell, SDE</h1>
+      <h1 id="header__logo">Lee Powell</h1>
 
       <nav class="header__nav">
-        <a href="#aboutMeTitle">About Me</a>
-        <a href="#contactIformation">Contact Information</a>
-        <a href="#myProjects">Projects</a>
+        <ul class="header__nav_list">
+          <li class="header__nav_listItem">
+            <a href="#aboutMe">About</a>
+          </li>
+          <li class="header__nav_listItem">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header__nav_listItem">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-    <main>
-      <section class="aboutMe">
-        <h2 id="aboutMeTitle">About Me</h2>
-        <figure>
-          <img
-            class="portfolioPicture"
-            src="Lee Powell's Portfolio_files\Monicle.jpg"
-            alt="picture of Lee"
-          />
-        </figure>
-        <article class="article__profile">
-          <div class="article__profile_description">
-            I enjoy developing programs to help automate repitition and simplify life.  Programs that I enjoy working on are 
-            things to help save time and money in life and business.  I am a heavy continuous improvement advocate and I'm always 
-            looking for a way to streamline my work and maintain higher quality.
-          </div>
-          <h2 class="skills__list">Skills</h2>
-          <ol>
-            <li class="skills__list_coding">Coding</li>
-            <ul>
-              <li>Java</li>
-              <li>JavaScipt</li>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Batch Script</li>
-            </ul>
-            <li class="skills__list_professional">Professional Skills</li>
-            <ul>
-              <li>Communication</li>
-              <li>Collaboration</li>
-              <li>Problem Sovling</li>
-              <li>Analytical</li>
-            </ul>
-            <li class="skills__list_personal">Personal Skills</li>
-            <ul>
-              <li>Creativity</li>
-              <li>Attention to Detail</li>
-              <li>Negotiation</li>
-              <li>Possitive Attitude</li>
-            </ul>
-          </ol>
-        </article>
-      </section>
-      <section id="contactIformation">
-        <h2>Contact Information</h2>
-        <article class="contact__information">
-          <ul class="contact__information_list">
-            <li>Phone: (740) 258-8590</li>
-            <li>Email: lee.powell.code@gmail.com</li>
-          </ul>
-          <ul class="contact__information_links">
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-            />
-            <li>
-              <a
-                href="www.linkedin.com/in/lee-powell-5b580967"
-                class="fa fa-linkedin"
-              ></a>
-            </li>
-            <li>
-              <a href="https://github.com/leepowe" class="fa fa-github"></a>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section id="myProjects">
-        <h2 class="projects__title">Projects</h2>
-        <p>
-          Over my time in coding I have learned various coding languages and
-          programs. Here are some examples to show what I have learned over my
-          time as a full stack software developer.
-        </p>
-        <div id="projects">
-          <article class="projects__column">
-            <h3 class="projects__column_title">Virtual Pets Amok</h3>
-            <figure class="projects__column_figure">
-              <img
-                class="virtualPetsAmok"
-                src="Lee Powell's Portfolio_files\PetsAmok.JPG"
-                alt="image of virtual pets amok project"
-              />
-              <input
-                type="button"
-                class="projects__column_button"
-                value="Virtual Pets Amok Project"
-              />
-            </figure>
-            <br />
-            <a
-              href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java"
-              >Virtual Pets Amok project file</a
-            >
-            <ol class="project__proficiency_list">
-              <li class="poject__technology_list">Technology Used</li>
-              <ul>
-                <li>IntelliJ</li>
-                <li>Eclipse</li>
-              </ul>
-              <li class="project__skills_list">Skills Used</li>
-              <ul>
-                <li>Conditionals</li>
-                <li>Tick Counter</li>
-                <li>If/Else Statements</li>
-                <li>Do While Loops</li>
-                <li>Nested For Loops</li>
-                <li>HashMap</li>
-                <li>Interfaces</li>
-                <li>Abstract Class</li>
-                <li>Inheritance</li>
-                <li>Encapsolation</li>
-                <li>TDD</li>
-              </ul>
-            </ol>
-          </article>
-          <article class="projects__column">
-            <h3 class="projects__column_title">MacGyver Foods</h3>
-            <figure class="projects__column_figure">
-              <img
-                class="MacGyverFoods"
-                src="Lee Powell's Portfolio_files\MacGyver Foods.png"
-                alt="Image of MacGyver Foods project"
-              />
-              <input
-                type="button"
-                class="projects__column_button"
-                value="MacGyver Foods Project"
-              />
-            </figure>
-            <br /><a
-              href="https://github.com/leepowe/macgyver-foods-repo"
-              >MacGyver Foods project file</a
-            >
-            <ol class="project__proficiency_list">
-              <li class="project__technology_list">Technology Used</li>
-              <ul>
-                <li>IntelliJ</li>
-                <li>Visual Studio Code</li>
-                <li>API</li>
-              </ul>
-              <li class="project__skills_list">Skills Used</li>
-              <ul>
-                <li>Use existing API</li>
-                <li>Creating an API</li>
-                <li>Add/Remove itmes from an API</li>
-                <li>Creating a login module</li>
 
-              </ul>
-            </ol>
-          </article>
-          <article class="projects__column">
-            <h3 class="projects__column_title">Guessing Game</h3>
-            <figure class="projects__column_figure">
-              <img
-                class="guessingGame"
-                src="Lee Powell's Portfolio_files\Guessing Game.JPG"
-                alt="Image of Guessing Game project"
-              />
-              <input
-                type="button"
-                class="projects__column_button"
-                value="Guessing Game Project"
-              />
-            </figure>
-            <br /><a href="https://github.com/leepowe/guessingGame"
-              >Guessing Game project file</a
-            >
-            <ol class="project__proficiency_list">
-              <li class="project__technology_list">Technology Used</li>
-              <ul>
-                <li>IntelliJ</li>
-              </ul>
-              <li class="project_skills_list">Skills Used</li>
-              <ul>
-                <li>Teamwork</li>
-                <li>Communication</li>
-                <li>Researching</li>
-                <li>Problem Solving</li>
-              </ul>
-            </ol>
-          </article>
-        </div>
+    </header>
+
+    <section class="profile" id="aboutMe">
+      <figure>
+        <img src="assets/images/Lee Powell.jpg" alt="Lee Powell" class="profile__image">
+      </figure>
+      <article class="profile__article">
+        <h2>Hello, I'm Lee Powell</h2>
+        <p>I enjoy developing programs to help automate repitition and 
+          simplify life. Programs that I enjoy working on are things to help 
+          save time and money in life and business. I am a heavy continuous 
+          improvement advocate and I'm always looking for a way to 
+          streamline my work and maintain higher quality.
+        </p>
+      </article>
+    </section>
+
+    <section class="skills">
+      <h3 class="skill__title">Some of my skills include:</h3>
+      <ul class="skill-list">
+        <li class="skills-coding title">Coding</li>
+        <ul class="skills-coding__list">
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+          <li>HTML</li>
+          <li>Batch Script</li>
+        </ul>
+        <li class="skills-professional title">Professional</li>
+        <ul class="skills-professional__list">
+          <li>Communication</li>
+          <li>Collaboration</li>
+          <li>Problem Solving</li>
+          <li>Analytical</li>
+        </ul>
+        <li class="skills-personal title">Personal</li>
+        <ul class="skills-personal__list">
+          <li>Creativity</li>
+          <li>Attention To Detail</li>
+          <li>Negotiation</li>
+          <li>Possitive Attitude</li>
+        </ul>
+      </ul>
+    </section>
+
+    <h2 class="projects__title">Projects</h2>
+
+    <section class="projects" id="projects">
+
+      <article class="projects__column">
+        <h3 class="projects__column_title">MacGyver Web App</h3>
+        <figure class="projects__column_figure">            
+          <a href="https://github.com/leepowe/macgyver-foods-repo">
+            <img src="assets/images/MacGyver Foods.png" alt="MacGyver Foods Website" class="projects__column_image">
+          </a>
+          <input type="button" class="projects__column_button" value="Click!">
+        </figure>
+        <a href="https://github.com/leepowe/macgyver-foods-repo">
+          MacGyver Foods Website Repo
+        </a>
+        <p>
+          We used an existing API, Spoonacular, to create an app that would help 
+          parents to find meals that they can make for their picky eater using the food that they have on hand. 
+          We would create a database based on what foods the user would input into our app and call those food from the api, noting allergens, to add some extra 
+          safety and for the user.  We created a log-in module so that the user could save their information and food on hand.  
+        </p>
+      </article>
+
+      <article class="projects__column">
+        <h3 class="projects__column_title">Virtual Pets Amok</h3>
+        <figure class="projects__column_figure">
+          <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java">
+            <img src="assets/images/PetsAmok.JPG" alt="Java application for Virtual Pets Amok" class="projects__column_image">
+          </a>
+          <input type="button" class="projects__column_button" value="Click!">
+        </figure>
+        <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java">
+          Virtual Pets Amok project file
+        </a>
+        <p>
+          The virtual pets that we remember from childhood have started to run amok!  Feeding, watering and petting isn't enough now.  It's time to start oiling your 
+          Tomawhoosie pets as mechanical pets join the fun.  Tick counters to keep the fun going even when you're done with the fun.  Hash maps for all your data loving needs. 
+          Interfaces because you always need a blueprint when building your mechanical friend or things might get lost or left out.
+        </p>
+      </article>
+
+      <article class="projects__column">
+        <h3 class="projects__column_title">Bank Teller</h3>
+        <figure class="projects__column_figure">
+          <img src="assets/images/Bank Teller.JPG" alt="java bank teller app" class="projects__column_image">
+          <input type="button" class="projects__column_button" value="Click!">
+        </figure>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sapiente quod, culpa, odit 
+          harum totam dolores quisquam optio cupiditate expedita, vel possimus illo aspernatur necessitatibus 
+          animi id aliquid quaerat itaque?</p>
+      </article>
+
+    </section>
+
+    <section class="contact">
+      <ul class="contactInfo">Contacting Me:</ul>
+        <li>
+          <a href="mailto: lee.powell.code@gmail.com">Email Me</a>
+        </li>
+        <li>
+          <a href="tel:7402588590">Call Me</a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/leempowell">Message Me</a>
+        </li>
+    </section>
+
+    <footer class="footer" id="contact">
+      <small class="footer__copyright">&copy; Lee Powell 2022</small>
+      <section class="footer__social">
+        <a href="www.linkedin.com/in/leempowell" class="fa fa-linkedin"></a>
+        <a href="https://github.com/leepowe" class="fa fa-github"></a>
       </section>
-    </main>
-    <footer class="footer">
-      <small class="footer__copyright"> &copy; 2021 </small>
     </footer>
-  </body>
+
+  </div> 
+
+</body>
 </html>
