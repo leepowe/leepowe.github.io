@@ -3,10 +3,13 @@
 :root {
   --negative-space-color: #36454f;
   --primary-bg-color: #b75922;
-  --secondary-bg-color: #B87333;
+  --secondary-bg-color: #b87333;
   --main-font-color: #ffc300;
-  --title-font-color: #900C3F;
+  --title-font-color: #900c3f;
   --accent-color: #daf7a6;
+
+  --alt-copper: #a06448;
+  --alt-charcoal: #676665;
 }
 
 * {
@@ -50,7 +53,7 @@ li {
 }
 
 #header__logo {
-  font-style: bold;
+  font-family: 'David Libre', serif;
   margin-left: 1rem;
 }
 
