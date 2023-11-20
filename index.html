@@ -1,167 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <title>Lee Powell</title>
-</head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto+Mono:wght@500&display=swap"
+			rel="stylesheet"
+		/>
 
-<body>
+		<link rel="stylesheet" href="css/light.css" />
 
-  <div class="container">
+		<link id="theme-style" rel="stylesheet" href="" />
 
-    <header class="header">
-      <h1 id="header__logo">Lee Powell</h1>
+		<script src="script.js" defer></script>
+		<title>New Lee Powell</title>
+	</head>
+	<body>
+		<section class="style1">
+			<div class="main-container">
+				<div class="greeting-wrapper">
+					<h1>Hi, I'm Lee Powell</h1>
+				</div>
+				<div class="intro-wrapper">
+					<div class="nav-wrapper">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+						<ul id="navigation">
+							<li><a href="#contact_title">Contact</a></li>
+						</ul>
+					</div>
+					<div class="left-column">
+						<img
+							id="profile_pic"
+							src="assets\images\Lee_Powell_pic.jpg"
+							alt="Lee_Powell_picture"
+						/>
+						<h5>Personalize Theme</h5>
 
-      <nav class="header__nav">
-        <ul class="header__nav_list">
-          <li class="header__nav_listItem">
-            <a href="#aboutMe">About</a>
-          </li>
-          <li class="header__nav_listItem">
-            <a href="#projects">Projects</a>
-          </li>
-          <li class="header__nav_listItem">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
+						<div id="theme-options-wrapper">
+							
+                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+							<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+							<div data-mode="green" id="green-mode" class="theme-dot"></div>
+							<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
 
-    </header>
+						</div>
 
-    <section class="profile" id="aboutMe">
-      <figure>
-        <img src="assets/images/Lee Powell.jpg" alt="Lee Powell" class="profile__image">
-      </figure>
-      <article class="profile__article">
-        <h2>Hello, I'm Lee Powell</h2>
-        <p>I enjoy developing programs to help automate repitition and 
-          simplify life. Programs that I enjoy working on are things to help 
-          save time and money in life and business. I am a heavy continuous 
-          improvement advocate and I'm always looking for a way to 
-          streamline my work and maintain higher quality.
-        </p>
-      </article>
-    </section>
+						<p id="settings-note">
+							*Theme settings will be saved <br />for your next visit.
+						</p>
+					</div>
+					<div class="right-column">
+						<div id="preview-shadow">
+							<div id="preview">
+								<div id="corner-top-left" class="corner"></div>
+								<div id="corner-top-right" class="corner"></div>
+								<h3>What I Do</h3>
+								<p>
+									I am an analytically driven software developer with a high
+									attention to detail with an afinity for problem solving.
+								</p>
+								<div id="corner-bottom-left" class="corner"></div>
+								<div id="corner-bottom-right" class="corner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="style2">
+			<div class="main-container">
+				<div class="about-wrapper">
+					<div class="about-me">
+						<h4>More about me</h4>
+						<p>
+							I enjoy developing programs to help automate repitition and
+							simplify life.
+						</p>
+						<p>
+							I am a continuous improvement advocate and I'm always looking for
+							a way to streamline my work and maintain a higher quality.
+						</p>
+						<hr />
+						<h4>Resume</h4>
 
-    <section class="skills">
-      <h3 class="skill__title">Some of my skills include:</h3>
-      <ul class="skill-list">
-        <li class="skills-coding__title">Coding</li>
-        <ul class="skills-coding__list">
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Batch Script</li>
-        </ul>
-        <li class="skills-professional__title">Professional</li>
-        <ul class="skills-professional__list">
-          <li>Communication</li>
-          <li>Collaboration</li>
-          <li>Problem Solving</li>
-          <li>Analytical</li>
-        </ul>
-        <li class="skills-personal__title">Personal</li>
-        <ul class="skills-personal__list">
-          <li>Creativity</li>
-          <li>Attention To Detail</li>
-          <li>Negotiation</li>
-          <li>Positive Attitude</li>
-        </ul>
-      </ul>
-    </section>
+						<p>
+							Fullstack developer:
+							<a
+								target="_blank"
+								href="assets\documents\Lee Powell Resume 11-13-2023.pdf"
+								>Download Resume</a
+							>
+						</p>
 
-    <h2 class="projects__title">Projects</h2>
+						<div id="skills">
+							<ul>
+								<li>Java</li>
+								<li>JavaScript</li>
+								<li>HTML5/CSS</li>
+								<li>Spring</li>
+								<li>Node.js</li>
+							</ul>
+							<ul>
+								<li>API</li>
+								<li>MVC</li>
+								<li>Scrum</li>
+								<li>TDD</li>
+								<li>Agile</li>
+							</ul>
+						</div>
+					</div>
 
-    <section class="projects" id="projects">
+					<div class="social-links">
+						<img id="social_img" src="assets\images\githubhome.PNG" />
+						<h3>Find me on LinkedIn and GitHub</h3>
+						<a href="https://www.linkedin.com/in/leempowell" target="_blank"
+							>LinkedIn</a
+						>
+						<a href="https://github.com/LeePowe" target="_blank">GitHub</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-      <article class="projects__column">
-        <h3 class="projects__column_title">MacGyver Web App</h3>
-        <figure class="projects__column_figure">            
-          <img src="assets/images/MacGyver Foods.png" alt="MacGyver Foods Website" class="projects__column_image">
-          <a href="https://github.com/leepowe/macgyver-foods-repo">
-            <input type="button" class="projects__column_button" value="MacGyver Foods">
-          </a>
-        </figure>
-        <a href="https://github.com/leepowe/macgyver-foods-repo">
-          MacGyver Foods Website Repo
-        </a>
-        <p>
-          We used an existing API, Spoonacular, to create an app that would help 
-          parents to find meals that they can make for their picky eater using the food that they have on hand. 
-          We would create a database based on what foods the user would input into our app and call those food from the api, noting allergens, to add some extra 
-          safety and for the user.  We created a log-in module so that the user could save their information and food on hand.  
-        </p>
-      </article>
 
-      <article class="projects__column">
-        <h3 class="projects__column_title">Virtual Pets Amok</h3>
-        <figure class="projects__column_figure">
-          <img src="assets/images/PetsAmok.JPG" alt="Java application for Virtual Pets Amok" class="projects__column_image">
-          <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java">
-          <input type="button" class="projects__column_button" value="Virtual Pets Amok"></a>
-        </figure>
-        <a href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java">
-          Virtual Pets Amok project file
-        </a>
-        <p>
-          The virtual pets that we remember from childhood have started to run amok!  Feeding, watering and petting isn't enough now.  It's time to start oiling your 
-          Tomawhoosie pets as mechanical pets join the fun.  Tick counters to keep the fun going even when you're done with the fun.  Hash maps for all your data loving needs. 
-          Interfaces because you always need a blueprint when building your mechanical friend or things might get lost or left out.
-        </p>
-      </article>
+		<section class="style1">
+			<h3 id="projects_title">Some of my past projects</h3>
 
-      <article class="projects__column">
-        <h3 class="projects__column_title">Guessing Game</h3>
-        <figure class="projects__column_figure">
-          <img src="assets/images/Guessing Game.JPG" alt="java guessing game app" class="projects__column_image">
-          <a href="https://github.com/leepowe/guessingGame">
-            <input type="button" class="projects__column_button" value="Guessing Game">
-          </a>
-        </figure>
-        <a href="https://github.com/leepowe/guessingGame">
-          Guessing Game project file
-        </a>
-        <p>
-          This project is more about team work ability and problem solving as.  This is one of the first projects we worked on in class and 
-          none of us knew eachother and we came from different background and skillsets.  We brought our strenghts together to complete a project 
-          where we didn't know how to complete the goals at hand creating a game that used random number generation and the user had 3 tries to 
-          guess what number was generated.  This is an example of a program that we had not had enough time to complete with our collective 
-          knowledge but through amazing teamwork and perserverance we obtained most goals and a few stretch goals.
-        </p>
-      </article>
+			<div class="main-container">
+				<div class="post-wrapper">
+					<div>
+						<div class="post">
+							<img class="thumbnail" src="assets/images/MacGyver Foods.png" />
+							<div class="post-preview">
+								<h6 class="post-title">MacGyver Foods Web App</h6>
+								<p class="post-intro">
+									A web app that uses a stored database of foods the user has
+									on-hand and noting food allergens makes calls to an API to see
+									what meals could be made.
+								</p>
+								<a href="https://github.com/leepowe/macgyver-foods-repo" target="_blank">Read More</a>
+							</div>
+						</div>
+					</div>
 
-    </section>
+					<div>
+						<div class="post">
+							<img class="thumbnail" src="assets/images/PetsAmok.jpg" />
+							<div class="post-preview">
+								<h6 class="post-title">Virtual Pets Amok</h6>
+								<p class="post-intro">
+									This is a Java based version of the virtual pets from the 80's
+									but they are all there and they are running amok. These pets
+									run from carbon based to carbon neutral.
+								</p>
+								<a href="https://github.com/2021-Spring-Part-Time/virtual-pet-leepowe/blob/master/src/main/java/virtual_pet/VirtualPet.java" target="_blank">Read More</a>
+							</div>
+						</div>
+					</div>
 
-    <section class="contact">
-      <ul class="contactInfo">
-        <p>Contacting Me:</p>
-        <li>
-          <a href="mailto: lee.powell.code@gmail.com">Email Me</a>
-        </li>
-        <li>
-          <a href="tel:7402588590">Call Me</a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/in/leempowell">Message Me</a>
-        </li>
-      </ul>
-    </section>
+					<div>
+						<div class="post">
+							<img class="thumbnail" src="assets/images/JS-Tic-Tac-Toe.PNG" />
+							<div class="post-preview">
+								<h6 class="post-title">JavaScript Tic Tac Toe</h6>
+								<p class="post-intro">
+									This is a simple project where you are playing a game of tic-tac-toe.  It blocks clicking occupied cells and shows a highlight of placeholders for the cell you are hovering.  I also used css to build the X's and O's to allow for responsive display.
+								</p>
+								<div class="post-links">
+									<a class="try-link" href="TicTacToe/JS-Tic-Tac-Toe.html" target="_blank">Try it out</a>
+									<a class="repo-link" href="https://github.com/leepowe/JS-Tic-Tac-Toe">View Repo</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="style2">
+			<div class="main-container">
+				<h3 id="contact_title">Get In Touch</h3>
+				<form id="contact_form">
+					<label>Name</label>
+					<input class="input-field" type="text" name="name" />
 
-    <footer class="footer" id="contact">
-      <small class="footer__copyright">&copy; Lee Powell 2022</small>
-      <section class="footer__social">
-        <a href="www.linkedin.com/in/leempowell" class="fa fa-linkedin"></a>
-        <a href="https://github.com/leepowe" class="fa fa-github"></a>
-      </section>
-    </footer>
+					<label>Subject</label>
+					<input class="input-field" type="text" name="subject" />
 
-  </div> 
+					<label>Email</label>
+					<input class="input-field" type="text" name="email" />
 
-</body>
+					<label>Message</label>
+					<textarea class="input-field" name="message"></textarea>
+
+					<input id="submit_btn" type="submit" value="Send" />
+				</form>
+			</div>
+		</section>
+	</body>
 </html>
