@@ -274,6 +274,10 @@ ul {
     justify-content: space-evenly;
 }
 
+/* #skills ul:first-child {
+    padding-left: 8px;
+} */
+
 .social-links {
     align-content: center;
     display: grid;
