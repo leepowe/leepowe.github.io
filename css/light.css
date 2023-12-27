@@ -261,6 +261,14 @@ ul {
     right: -5px;
 }
 
+#preview h3 {
+    margin-top: .85rem;
+}
+
+#preview p {
+    font-size: .95rem;
+}
+
 .about-wrapper {
     display: grid;
     gap: 100px;
