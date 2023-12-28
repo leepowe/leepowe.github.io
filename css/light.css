@@ -215,11 +215,23 @@ ul {
 }
 
 #easy-read {
-    display: none;
-    padding-right: 20px;
-    max-width: 100px;
+    /* display: none; */
+    background-color: var(--buttonColor);
+    border: none;
     border-radius: 3px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 165px;
 }
+
+
+#submit_btn, #easy-read {
+    /* padding: 10px 0; */
+}
+
 
 #settings-note {
     font-size: 12px;
@@ -387,7 +399,7 @@ ul {
     padding: 15px;
 }
 
-#submit_btn, #easy-read {
+#submit_btn {
     background-color: var(--buttonColor);
     border: none;
     color: #fff;
