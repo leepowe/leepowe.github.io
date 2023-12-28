@@ -189,6 +189,8 @@ ul {
 
 .theme-dot:hover {
     border-width: 5px;
+    height: 23px;
+    width: 23px;
 }
 
 #light-mode {
@@ -205,6 +207,17 @@ ul {
 
 #purple-mode {
     background-color: #7E4C74;
+}
+
+.easy-read-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#easy-read {
+    padding-right: 20px;
+    max-width: 100px;
+    border-radius: 3px;
 }
 
 #settings-note {
@@ -373,7 +386,7 @@ ul {
     padding: 15px;
 }
 
-#submit_btn {
+#submit_btn, #easy-read {
     background-color: var(--buttonColor);
     border: none;
     color: #fff;
