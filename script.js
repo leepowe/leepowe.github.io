@@ -1,10 +1,10 @@
 const themeDots = document.querySelectorAll('.theme-dot');
 const theme = localStorage.getItem('theme') || 'light';
-
 const readabilityBtn = document.querySelector('.readability-btn');
+let readability = localStorage.getItem('readability') || 'stylized';
 
 setTheme(theme);
-setReadability();
+setReadability(readability);
 
 for (const themeDot of themeDots) {
 	themeDot.addEventListener('click', () => {
@@ -15,7 +15,10 @@ for (const themeDot of themeDots) {
 
 readabilityBtn.addEventListener('click', () => {
 	readabilityBtn.classList.toggle('easy-read');
-	setReadability();
+	readability = readabilityBtn.classList.contains('easy-read')
+		? 'readability'
+		: 'stylized';
+	setReadability(readability);
 });
 
 function getStylesheetUrl(mode) {
@@ -41,17 +44,16 @@ function setTheme(mode) {
 	localStorage.setItem('theme', mode);
 }
 
-function setReadability() {
+function setReadability(readability) {
 	let fontFamily = document.getElementById('font-family');
-	let	stylizedFont = getStylesheetUrl('stylized');
+	let stylizedFont = getStylesheetUrl('stylized');
 
-	if (readabilityBtn.classList.contains('easy-read')) {
+	if (readability === 'readability') {
 		fontFamily.href = getStylesheetUrl('readability');
 		readabilityBtn.innerHTML = 'Fancy Font';
-		console.log('easy-read');
 	} else {
 		fontFamily.href = stylizedFont;
 		readabilityBtn.innerHTML = 'Easy Read';
-		console.log('stylized');
 	}
+	localStorage.setItem('readability', readability);
 }
