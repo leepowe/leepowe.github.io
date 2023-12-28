@@ -215,6 +215,7 @@ ul {
 }
 
 #easy-read {
+    display: none;
     padding-right: 20px;
     max-width: 100px;
     border-radius: 3px;
