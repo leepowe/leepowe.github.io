@@ -47,9 +47,11 @@ function setReadability() {
 
 	if (readabilityBtn.classList.contains('easy-read')) {
 		fontFamily.href = getStylesheetUrl('readability');
+		readabilityBtn.innerHTML = 'Fancy Font';
 		console.log('easy-read');
 	} else {
 		fontFamily.href = stylizedFont;
+		readabilityBtn.innerHTML = 'Easy Read';
 		console.log('stylized');
 	}
 }
