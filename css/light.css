@@ -13,6 +13,9 @@
     --previewShadow: #F0EAD6;
 
     --buttonColor: black;
+
+    --headerFontFamily: 'Prata', serif;
+    --mainFontFamily: 'Roboto Mono', monospace;
 }
 
 html, body {
@@ -26,7 +29,7 @@ transition: 0.28s;
 
 h1, h2, h3, h4, h5, h6, strong  {
     color: var(--mainText);
-    font-family: 'Prata', serif;
+    font-family: var(--headerFontFamily);
     font-weight: 600;
 }
 
@@ -44,7 +47,7 @@ h5 {
 
 p, li, span, label, input, textarea {
     color: var(--mainText);
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--mainFontFamily);
 }
 
 a {
