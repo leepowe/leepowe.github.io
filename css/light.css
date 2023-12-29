@@ -308,7 +308,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     gap: .85rem;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 #skills ul:first-child {
@@ -462,7 +462,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 555px) {
+@media screen and (max-width: 483px) {
      #skills ul:not(:last-child) {
         margin-bottom: 0;
     }
