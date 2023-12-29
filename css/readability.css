@@ -2,3 +2,7 @@
     --headerFontFamily: verdana, arial, helvetica;
     --mainFontFamily: tahoma, arial, helvetica;
 }
+
+#easy-read {
+    font-family: 'Prata', serif;
+}
